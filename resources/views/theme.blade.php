@@ -3,6 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Студия красоты — это всегда уютная атмосфера, доброжелательное отношение к гостям, высокая квалификация всей команды!
+Нам нравится заботится о вас."/>
+    <meta name="keywords" content="салон красоты"/>
+    <meta name="keywords" content="студия красоты"/>
+    <meta name="keywords" content="салон красоты абакан"/>
+    <meta name="keywords" content="парикмахерская"/>
+    <meta name="keywords" content="парикмахерская абакан"/>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
