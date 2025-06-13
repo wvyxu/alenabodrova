@@ -7,6 +7,8 @@
 Нам нравится заботится о вас."/>
     <meta name="keywords" content="салон красоты"/>
     <meta name="keywords" content="студия красоты"/>
+    <meta name="keywords" content="студия красоты бодровой"/>
+    <meta name="keywords" content="салон красоты бодровой"/>
     <meta name="keywords" content="салон красоты абакан"/>
     <meta name="keywords" content="парикмахерская"/>
     <meta name="keywords" content="парикмахерская абакан"/>
