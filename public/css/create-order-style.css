@@ -1,0 +1,91 @@
+.name-sect {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    align-self: center;
+}
+
+form {
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+form input {
+    min-width: 100%;
+}
+
+.order-form-photo img {
+    max-height: 500px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-window {
+    width: 50%;
+    background-color: #f6f6f6;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+.input-group-text { margin-left: 20px;}
+.styled-select {
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+select:focus { outline: none; }
+.styled-select select {
+    height: 40px;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    font-size: 18px;
+
+    /*hide default down arrow in webkit */
+    appearance: none; 
+}
+
+@-moz-document url-prefix(){
+.styled-select select { width: 110%; }
+}
+
+.form-control {
+    padding: 10px 20px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid #ccc;
+    font-size: 18px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 8px;
+}
+
+select::-ms-expand { display: none; } 
+
+.styled-select::before {
+    content: '›'; 
+    position: absolute;
+    transform: rotate(90deg);
+    top: 7px;
+    right: 10px; 
+    pointer-events: none;
+    color: rgb(128, 128, 128);
+}
+
+.mt-3 {
+    align-self: center;
+}

@@ -1,0 +1,42 @@
+.name-sect {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 7px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-window {
+    width: 50%;
+    background-color: #f6f6f6;
+    border-radius: 15px;
+    padding: 40px;
+}
+.address { font-size: 18px;}
+.about-company {  margin-bottom: 40px;}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    text-decoration: none;
+}
+h2 {
+    color: black;
+    font-weight: 400;
+}
+
+.menu-hr {
+    margin: 30px 0 10px 15px;
+    width: 180px;
+}

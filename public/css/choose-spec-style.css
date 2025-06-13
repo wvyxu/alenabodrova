@@ -1,0 +1,77 @@
+.name-sect {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 7px;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-window {
+    width: 50%;
+    background-color: #f6f6f6;
+    border-radius: 15px;
+    padding: 40px;
+}
+.address { font-size: 16px;}
+.about-company {  margin-bottom: 40px;}
+
+.nav-menu {
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    text-decoration: none;
+}
+h2 {
+    color: black;
+    font-weight: 400;
+    text-decoration: none;
+    margin-left: 20px;
+
+}
+
+.overflow {
+    max-width: 90%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+h2 {
+    display: inline-block;
+    transition: transform 0.3s linear;
+    box-sizing: content-box;
+}
+
+.menu-hr {
+    margin: 20px 0 10px 45px;
+    width: 180px;
+    background-color: rgb(255, 255, 255);
+}
+
+.overflow:hover h2 {
+    animation: marquee 5s linear infinite;
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.menu-hr {
+    margin: 20px 0 10px 45px;
+    width: 180px;
+    background-color: rgb(255, 255, 255);
+}

@@ -1,0 +1,112 @@
+.name-sect {
+    font-size: 32px;
+    font-weight: 300;
+    margin: 10px 0 7px 25px;
+}
+
+form {
+    width: 100%;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu-window {
+    width: 50%;
+    background-color: #f6f6f6;
+    border-radius: 15px;
+    padding: 40px;
+}
+
+
+.grid-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px 40px;
+}
+.two-rows {
+    display: flex;
+    justify-content: space-between;
+}
+.two-rows > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.two-rows > div > input {
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+.full-row {
+    display: flex;
+    flex-direction: column;
+}
+.full-row > input {
+    width: 100%;
+}
+.row-checkbox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.row-checkbox > label { font-size: 14px;}
+.row-checkbox > input {
+    width: 15px;
+    height: 15px;
+    margin-right: 8px;
+}
+.grid-form > div > p, 
+.flex-form > div > p,
+.grid-form > .two-rows > div > p, 
+.flex-form >.two-rows > div > p, 
+.rulesError  {
+    font-size: 14px;
+    margin-top: 5px;
+    color: red;
+    padding-left: 25px;
+}
+
+.grid-form > div > input, 
+.flex-form > div > input {
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+.button-outline > button {
+    width: 249px;
+    height: 60px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.back {
+    background-color: rgba(255, 255, 255, 0);
+    font-size: 18px;
+    margin-right: 7px;
+}
+
+.next {
+    background-color: #000;
+    color: aliceblue;
+    font-size: 20px;
+}
+
+.flex-form {
+    display: flex;
+    flex-direction: column;
+    gap: 33px 40px;
+}
+
+.underline {
+    text-decoration: underline;
+}
