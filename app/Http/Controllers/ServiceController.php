@@ -9,6 +9,7 @@ use App\Models\ServiceType;
 use App\Models\Subcategory;
 use App\Models\Specialization;
 use App\Models\StuffSpecialization;
+use App\Models\Length;
 use App\Models\User;
 
 class ServiceController extends Controller
@@ -76,6 +77,16 @@ class ServiceController extends Controller
         $servicetypes = ServiceType::get();
         $data = ["servicetypes" => $servicetypes];
         return view('admin.admin-services', $data);
+    }
+
+    public function create(){
+        $servicetypes = ServiceType::get();
+        $lengths = Length::get();
+        $specializations = Specialization::get();
+        $data = ["servicetypes" => $servicetypes,
+                    'lengths' => $lengths,
+                    'specializations' => $specializations,];
+        return view('admin.admin-services-create', $data);
     }
 }
 

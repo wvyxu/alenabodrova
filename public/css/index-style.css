@@ -206,3 +206,20 @@ a[name="about"] {
     position: absolute;
     bottom: 100px; 
 }
+
+.map {
+    display: flex;
+    flex-direction: row;
+}
+
+.about-company {
+    margin: 60px 0 0 100px;
+}
+
+.about-company-text {
+    font-size: 20px;
+}
+
+.about-company > .pad {
+    margin-left: 40px;
+}

@@ -65,8 +65,8 @@ class UserController extends Controller
     }
 
     public function show_admin(){
-        return view('admin.index');
+        $users = User::where('role', '0')->get();
+        $data = ['users' => $users];
+        return view('admin.admin-users', $data);
     }
-
-    
 }

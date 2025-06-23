@@ -10,10 +10,11 @@ use App\Models\StuffSpecialization;
 use App\Models\ServiceType;
 use App\Models\Service;
 
+
 class StuffController extends Controller
 {
     public function stuff()  {
-        $stuffs = User::get();
+        $stuffs = User::whereNotNull('work_exp')->get();
         $servicetypes = ServiceType::get();
         
         $data = ["stuffs" => $stuffs, 'servicetypes' => $servicetypes];
@@ -135,10 +136,14 @@ class StuffController extends Controller
     }
 
     public function show_admin(){
-        $stuffs = User::where('role', '1')->where('role', '2')->get();
+        $stuffs = User::where('role', '1')->orWhere('role', '2')->get();
         $data = ["stuffs" => $stuffs];
         return view('admin.admin-stuff', $data);
     }
 
-    
+    public function create(){
+        $specializations = Specialization::get();
+        $data = ["specializations" => $specializations];
+        return view('admin.admin-stuff-create', $data);
+    }
 }

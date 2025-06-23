@@ -105,3 +105,72 @@ tbody tr:hover {
 .cont {
     height: max-content;
 }
+
+
+
+
+
+.grid-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px 40px;
+}
+.full-row {
+    display: flex;
+    flex-direction: column;
+}
+.full-row > input, .full-row > select {
+    width: 50%;
+}
+.full-row > label {
+    font-size: 18px;
+}
+
+#submit {
+    width: 20%;
+    
+
+}
+
+.grid-form > div > p {
+    font-size: 14px;
+    margin-top: 5px;
+    color: red;
+    padding-left: 25px;
+}
+
+.grid-form > div > input, .full-row > select {
+    font-size: 16px;
+    padding: 10px 25px;
+    border-radius: 6px;
+    margin-top: 5px;
+}
+
+.button-outline > button {
+    width: 249px;
+    height: 60px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+
+.flex-form {
+    display: flex;
+    flex-direction: column;
+    gap: 33px 40px;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.back {
+    color: #2c3e50;
+    text-decoration: none;
+}
+
+.back:hover {
+    color: #131a21;
+    text-decoration: underline;
+}

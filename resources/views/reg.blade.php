@@ -2,7 +2,19 @@
 @section('title') Регистрация @endsection
 @section('style')reg-style.css @endsection
 @section('content')
+
+        @if(session('error'))
+            <label>
+                <input type="checkbox" class="alertCheckbox" autocomplete="off" />
+                <div class="alert success">
+                    <span class="alertClose">x</span>
+                    <span class="alertText">{{ session('error') }}
+                    <br class="clear"/></span>
+                </div>
+            </label>
+        @endif
     <section class="menu">
+        
         <div class="menu-window">
             <div class="contact-info-container">
                 <form action="/register" method="POST">
@@ -10,6 +22,7 @@
                     @method('post')
                     <div class="grid-form">
                         <h1 class="name-sect">Регистрация</h1>
+                        
                         <div class="two-rows">
                             <div class="full-row">
                                 <label for="name">Имя</label>

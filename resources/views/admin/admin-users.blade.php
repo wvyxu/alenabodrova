@@ -6,13 +6,14 @@
         <div class="table">
             <main class="dflex table">
                 @include('admin.sidebar')
+
                 <div class="cont">
                     <section class="sect">
                         <div class="admin-head">
-                            <h1 class="name-sect">Сотрудники</h1>
-                            <a href="/admin/staff/create" class="add-btn">
-                                <button>Добавить сотрудника</button>
-                            </a>
+                            <h1 class="name-sect">Пользователи</h1>
+                            <p class="add-btn">
+                                <button>{{count($users)}} пользователей</button>
+                            </p>
                         </div>
                         <table>
                             <thead>
@@ -21,20 +22,18 @@
                                     <th>Фамилия</th>
                                     <th>Имя</th>
                                     <th>Отчество</th>
-                                    <th>Специализация</th>
-                                    <th>Стаж работы</th>
+                                    <th>Номер телефона</th>
                                     <th>Действия</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($stuffs as $s)
+                                @foreach ($users as $u)
                                     <tr>
-                                        <td>{{$s->id}}</td>
-                                        <td>{{$s->surname}}</td>
-                                        <td>{{$s->name}}</td>
-                                        <td>{{$s->patronymic}}</td>
-                                        <td>{{$s->stuff_specialization[0]->specialization->name}}</td>
-                                        <td>{{$s->work_exp}} года/год/лет</td>
+                                        <td>{{$u->id}}</td>
+                                        <td>{{$u->surname}}</td>
+                                        <td>{{$u->name}}</td>
+                                        <td>{{$u->patronymic}}</td>
+                                        <td>{{$u->phone}}</td>
                                         <td>
                                             <input type="submit" class="change-btn" style="background: #fbfbfb; color: black; border: 1px solid #f4f6f8;" value="Изменить">
                                             <input type="submit" value="Удалить">
