@@ -9,6 +9,7 @@ use Illuminate\Support\Facades\Hash;
 
 use App\Models\Stuff;
 use App\Models\User;
+use App\Models\Order;
 
 class UserController extends Controller
 {
@@ -23,7 +24,9 @@ class UserController extends Controller
         // if(Auth::user()->role == '2'){
         //     return redirect('admin');
         // } else 
-        return view('profile');
+        $orders = Order::get();
+        $data = ['orders' => $orders];
+        return view('profile', $data);
     }
     
     public function register(Request $r){
@@ -44,7 +47,7 @@ class UserController extends Controller
         
         $user->save();
         Auth::login($user);
-        return redirect('profile');
+        return redirect('/profile');
     }
 
     public function sign_in(Request $r){
@@ -53,9 +56,9 @@ class UserController extends Controller
             'password' => 'required']);
         if(Auth::attempt($v)){
             if(Auth::user()->role=='2'){
-                return redirect('admin');
+                return redirect('/admin');
             }
-            return redirect('profile');
+            return redirect('/profile');
         }
         return redirect()->back()->with(`error`, 'Неправильный логин или пароль');
     }

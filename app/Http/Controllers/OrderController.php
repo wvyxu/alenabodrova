@@ -27,7 +27,7 @@ class OrderController extends Controller
             
         // }
         $data = ["service" => $service, 'stuffspec' => $stuffspec[0]];
-        return view('createorder.create-order', $data);
+        return view('createorder\create-order', $data);
     }
 
     public function createorder(Request $r) {

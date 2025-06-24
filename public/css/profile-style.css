@@ -163,6 +163,7 @@
 	width: 280px;
 	padding: 15px 20px;
 	transition: box-shadow 0.3s ease;
+	user-select: none;
 }
 .card:hover {
 	box-shadow: 0 8px 16px rgba(168,0,0,0.5);
@@ -232,4 +233,8 @@
 	background-color: #EFE;
 	border: 1px solid #DED;
 	color: rgb(66, 87, 66);
+}
+
+.card-header {
+	text-transform: capitalize;
 }
