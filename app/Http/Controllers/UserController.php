@@ -44,7 +44,7 @@ class UserController extends Controller
         
         $user->save();
         Auth::login($user);
-        return redirect('/profile');
+        return redirect('profile');
     }
 
     public function sign_in(Request $r){
@@ -53,9 +53,9 @@ class UserController extends Controller
             'password' => 'required']);
         if(Auth::attempt($v)){
             if(Auth::user()->role=='2'){
-                return redirect('/admin');
+                return redirect('admin');
             }
-            return redirect('/profile');
+            return redirect('profile');
         }
         return redirect()->back()->with(`error`, 'Неправильный логин или пароль');
     }
